@@ -1,156 +1,271 @@
+# Config
+# ========================================================================================
+
+# IMPORTANT: Set the URL of your site.
+# Set to https://<username>.github.io when hosting on GitHub Pages
+# (unless you are using a custom domain).
+url:                   https://domain.tld
+
+# IMPORTANT: Set The "base URL" of your site.
+#
+# When hosting your site in a subdirectory of a server, set to /<name of directory>
+# (with leading /, but without the < >)
+# Use the empty string '' otherwise.
+#
+# When using GitHub Pages, set to '' when hosting a user- or organization page,
+# i.e. when the name of the repository looks like <username>.github.io.
+# Otherwise, set to /<name of repository> (with leading /, but without the < >).
+baseurl:               ''
+
+# Language of your content in 2-letter code, e.g.: en, de.
+# You may also provide a location, e.g.: en-us, de_AT.
+lang:                  en
+
+# The title of your blog. Used in the sidebar and the browser tab.
+title:                 Hydejack
+
+# A short description (~150 chars) of the page used for the meta description tag.
+# Can use markdown, but no more than one paragraph (enforced by `>`)
+description:           >
+  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
+  Combines the best of static sites and modern web apps.
+  Open `_config.yml` to edit this text.
+
+# A shorter description for the sidebar.
+tagline:               >
+  A Jekyll theme with JavaScript powers.
+  Open `_config.yml` to edit this text.
+
+# A list of keywords for your blog
+keywords:              []
+
+# Used by jekyll-seo-tag...
+logo:                  /assets/icons/icon.png
+
+# This should be the same author as first entry in `_data/authors.yml`.
+# Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
+author:
+  name:                <firstname> <lastname>
+  email:               <mail@domain.tld>
+  # Used by `jekyll-seo-tag`:
+  # twitter:             <username>
+
+# This text will appear in a `<small>` tag in the footer of every page.
+copyright:             © 2017. All rights reserved.
+
+# Add links to the footer.
+# Typically you'll want to link to your impress, cookies or privacy policy, etc.
+# legal:
+#   - title:             Impress
+#     href:              /impress/
+#   - title:             Cookies Policy
+#     href:              /cookies-policy/
+
+# Format of the permalinks
+permalink:             pretty
+
+# Pagination configuration (used by the `blog` layout)
+paginate:              5
+paginate_path:         /page-:num/
+
+
+# Customizaton
+# ========================================================================================
+
+# Sidebar image and theme color of the site.
+accent_image:          /assets/img/sidebar-bg.jpg
+accent_color:          '#4fb1ba'
+
+# The string encoding which fonts to fetch from Google Fonts.
+# See: <https://qwtel.com/hydejack/docs/configuration/>
+google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+
+# The text font. Expects a string that is a valid CSS font-family value.
+font:                  Noto Sans, Helvetica, Arial, sans-serif
+
+# The font used for headings. Expects a string that is a valid CSS font-family value.
+font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+
+# 3rd Party Integrations
+# ----------------------------------------------------------------------------------------
+
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+# google_analytics:      UA-XXXXXXXX-X
+
+# Setting a disqus shortname will enable the comment section on
+# pages with `comments: true` in the front matter.
+# disqus:                <disqus_shortname>
+
+# Setting a tinyletter username will enable the newsletter subscription box.
+# tinyletter:            <tinyletter_username>
+
+# Hydejack Settings
+# ----------------------------------------------------------------------------------------
+# These settings are specific to Hydejack.
+
+hydejack:
+  # Configure the order of complementary content on blog posts
+  post_addons:         [about, newsletter, related]
+
+  # Configure the order of complementary content on project pages
+  project_addons:      [about, newsletter, other]
+
+  # If you do not use Google Fonts, set to `true`.
+  no_google_fonts:     false
+
+  # Set to `true` if you don't want to show an icon indicating external links
+  no_mark_external:    false
+
+  # Set to `true` if third party plugins fail to work with dynamically loaded pages
+  no_push_state:       false
+
+  # Set to `true` if you want to disable the drawer
+  no_drawer:           false
+
+  # Set to `true` if you do not want parts of the css inlined in <head/>
+  # This *may* be benefitial when serving the site over HTTP/2.
+  no_inline_css:       false
+
+  # Code blocks and tables "break" the layout by spanning the full available width.
+  # Set this to true if you want them to be the same width as other content.
+  no_break_layout:     false
+
+  # Set to `true` if you do not want to expose your resume and projects
+  # in machine-readable formats.
+  no_structured_data:  false
+
+  # You can set this to `true` if you don't want to set the `theme-color` meta tag,
+  # This only affects the meta tag, not the color specified in the app manifest.
+  no_theme_color:      false
+
+  # Set to `true` when building with the `--lsi` option
+  use_lsi:             false
+
+  # When using Google Analytics, set to `true` to display a cookie notice banner.
+  # When enabled, no user-related data will be stored until the user gives consent.
+  cookies_banner:      false
+
+
+# Collections
+# ========================================================================================
+
+collections:
+  featured_categories:
+    permalink:         /category/:name/
+    output:            true
+
+  featured_tags:
+    permalink:         /tag/:name/
+    output:            true
+
+  projects:
+    permalink:         /projects/:path/
+    output:            true
+
+
+# File inclusion/exclusion
+# ========================================================================================
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+include:
+  - LICENSE.md
+
+
+# Plugins and Plugin Configuration
+# ========================================================================================
+
+plugins:
+  # - jekyll-avatar
+  # - jekyll-default-layout
+  - jekyll-feed
+  # - jekyll-gist
+  # - jekyll-optional-front-matter
+  - jekyll-paginate
+  # - jekyll-readme-index
+  # - jekyll-redirect-from
+  - jekyll-relative-links
+  # - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  # - jekyll-titles-from-headings
+
 # Theme
-remote_theme: epidrome/cover-card@main
+# ---------------------------------------------------------------------------------------
 
-# Title and tag line
-title: 'Wei Gao'
-description: 'A researcher on mobile network.'
+# theme: jekyll-theme-hydejack
+# remote_theme: qwtel/hydejack@gem
 
-# Images
-avatar: 'avatar.png'
-background: 'background.png'
-favicon: 'favicon.ico'
+# SEO Tag
+# ---------------------------------------------------------------------------------------
 
-# Online profiles
-#dribbble: 'mydribbble'
-#facebook: 'myfacebook'
-#twitter: 'mytwitter'
-#linkedin: 'mylinkedin'
-#instagram: 'myinsta'
-#pinterest: 'mypinterest'
-#youtube: 'myyoutube'
-github-user: 'willweigao/'
-#gitlab-user: ''
-#codepen: ''
-#steam: ''
-#soundcloud: ''
-#lastfm: ''
-#stack-overflow: ''
-#reddit: ''
-#rubygems: ''
-#medium:  ''
-#tumblr: 'mytumblr'
-#weibo: 'myweibo'
-#vk: 'myvk'
-blog_url: 'willweigao.github.io/'
-email: 'gaowei.hust@outlook.com'
-#messenger: 'myfbchat'
+# Where you proof that you own this site (used by jekyll-seo-tag)
+# google_site_verification: <verification-id>
+# -- or --
+# webmaster_verifications:
+#   google:              <verification-id>
+#   bing:                <verification-id>
+#   alexa:               <verification-id>
+#   yandex:              <verification-id>
 
-social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
+# Used for Twitter cards
+# twitter:
+#   username:            <shortname>
 
-# Yaml manifest of supported social links
-# Requirements:
-# `name`
-#     - plain-text name of the site (e.g. twitter)
-#     - **mandatory**
-# `url-pattern`
-#     - site URL pattern containing a placeholder string (e.g. twitter.com/__USERNAME__)
-#     - placeholder will be replaced by username or value specified in _config.yml (e.g. twitter.com/mytwitter)
-#     - **mandatory**
-# `url-scheme`
-#     - the hardcoded URI/URN url-scheme (e.g. https://)
-#     - can be one of: ['https://', 'http://', 'mailto:']
-#     - defaults to '//'
-#     - **optional**
-# `icon-class`
-#     - the font awesome icon class names
-#     - font-awesome free and supports `fas` (solid) and `fab` (brands) styles
-#     - defaults to `fab` style and uses value of `name` attribute (e.g. fab fa-2x fa-twitter)
-#     - **optional**
-social-links:
-  - name: facebook
-    url-pattern: facebook.com/__USERNAME__
-    icon-class: fab fa-2x fa-facebook-f
+# Used for Facebook open graph
+# facebook:
+#   app_id:              <id>
+#   publisher:           <id>
+#   admins:              <id>
 
-  - name: twitter
-    url-pattern: twitter.com/__USERNAME__
+# Used on index and about sites
+# social:
+#   name:                <firstname> <lastname>
+#   links:
+#     - https://twitter.com/<username>
+#     - https://github.com/<username>
 
-  - name: linkedin
-    url-pattern: linkedin.com/in/__USERNAME__
 
-  - name: google-plus
-    url-pattern: plus.google.com/+__USERNAME__
+# Other Plugins
+# ---------------------------------------------------------------------------------------
 
-  - name: vk
-    url-pattern: vk.com/__USERNAME__
+optional_front_matter:
+  remove_originals:    true
 
-  - name: weibo
-    url-pattern: weibo.com/__USERNAME__
+readme_index:
+  remove_originals:    true
 
-  - name: instagram
-    url-pattern: instagram.com/__USERNAME__
+relative_links:
+  collections:         true
 
-  - name: flickr
-    url-pattern: flickr.com/__USERNAME__
+titles_from_headings:
+  strip_title:         true
+  collections:         true
 
-  - name: pinterest
-    url-pattern: pinterest.com/__USERNAME__
+kramdown:
+  footnote_backlink:   '&#x21a9;&#xfe0e;'
+  math_engine:         mathjax
+  math_engine_opts:
+    preview:           true
+    preview_as_code:   true
 
-  - name: github-user
-    url-pattern: github.com/__USERNAME__
-    icon-class: fab fa-2x fa-github
+compress_html:
+  comments:            ["<!-- ", " -->"]
+  clippings:           all
+  endings:             all
+  ignore:
+    envs:              [development]
 
-  - name: gitlab-user
-    url-pattern: gitlab.com/__USERNAME__
-    icon-class: fab fa-2x fa-gitlab
+sass:
+  style:               compressed
 
-  - name: codepen
-    url-pattern: codepen.com/__USERNAME__
-
-  - name: stack-overflow
-    url-pattern: stackoverflow.com/users/__USERNAME__
-
-  - name: reddit
-    url-pattern: reddit.com/user/__USERNAME__
-
-  - name: rubygems
-    url-pattern: rubygems.org/profiles/__USERNAME__
-    icon-class: far fa-2x fa-gem
-
-  - name: steam
-    url-pattern: steamcommunity.com/id/__USERNAME__
-
-  - name: youtube
-    url-pattern: youtube.com/__USERNAME__
-
-  - name: vimeo
-    url-pattern: vimeo.com/__USERNAME__
-
-  - name: soundcloud
-    url-pattern: soundcloud.com/__USERNAME__
-
-  - name: lastfm
-    url-pattern: last.fm/user/__USERNAME__
-
-  - name: medium
-    url-pattern: medium.com/@__USERNAME__
-
-  - name: tumblr
-    url-pattern: __USERNAME__.tumblr.com
-
-  - name: dribbble
-    url-pattern: dribbble.com/__USERNAME__
-
-  - name: keybase
-    url-pattern: keybase.io/__USERNAME__
-
-  - name: messenger
-    url-pattern: m.me/__USERNAME__
-    icon-class: fab fa-2x fa-facebook-messenger
-
-  - name: telegram
-    url-pattern: telegram.me/__USERNAME__
-
-  - name: snapchat
-    url-pattern: snapchat.com/add/__USERNAME__
-
-  - name: quora
-    url-pattern: www.quora.com/profile/__USERNAME__
-
-  - name: blog_url
-    url-pattern: '__USERNAME__'
-    icon-class: fas fa-2x fa-blog
-
-  - name: email
-    url-scheme: 'mailto:'
-    url-pattern: '__USERNAME__'
-    icon-class: far fa-2x fa-envelope-open
+# If you are upgrading form v5 (or earlier), uncomment the lines below,
+# so that the location of the feed XML stays the same.
+# feed:
+#   path:                atom.xml
