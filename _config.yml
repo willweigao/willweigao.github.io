@@ -3,11 +3,11 @@ remote_theme: epidrome/cover-card@main
 
 # Title and tag line
 title: 'Wei Gao'
-description: 'I am a researcher on mobile network.'
+description: 'A researcher on mobile network.'
 
 # Images
-avatar: 'avatar.jpg'
-background: 'background.jpg'
+avatar: 'avatar.png'
+background: 'background.png'
 favicon: 'favicon.ico'
 
 # Online profiles
