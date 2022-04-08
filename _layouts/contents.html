@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h1>Contents</h1>
+<h4>Innovation requires courage and wisdom.</h4>
+
+{{content}}
+
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
