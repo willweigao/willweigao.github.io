@@ -2,7 +2,7 @@
 layout: contents
 ---
 
-1. W. Peng, M. Li, Y. Li, ****W. Gao**** and T. Jiang, "Ultra-Dense Heterogeneous Relay Networks: A Non-Uniform Traffic Hotspot Case," in IEEE Network, vol. 31, no. 4, pp. 22-27, July-August 2017, doi:[10.1109/MNET.2017.1600295](https://ieeexplore.ieee.org/document/7994890).
+1. W. Peng, M. Li, Y. Li, **W. Gao** and T. Jiang, "Ultra-Dense Heterogeneous Relay Networks: A Non-Uniform Traffic Hotspot Case," in IEEE Network, vol. 31, no. 4, pp. 22-27, July-August 2017, doi:[10.1109/MNET.2017.1600295](https://ieeexplore.ieee.org/document/7994890).
 2. W. Peng, **W. Gao** and J. Liu, "A Novel Perspective on Multiple Access in 5G Network: Framework and Solutions," in IEEE Wireless Communications, vol. 26, no. 3, pp. 154-160, June 2019, doi: [10.1109/MWC.2019.1800315](https://ieeexplore.ieee.org/document/8648448).
 3. W. Peng, **W. Gao** and J. Liu, "AI-Enabled Massive Devices Multiple Access for Smart City," in IEEE Internet of Things Journal, vol. 6, no. 5, pp. 7623-7634, Oct. 2019, doi: [10.1109/JIOT.2019.2902448](https://ieeexplore.ieee.org/document/8656575).
 4. **W. Gao**, W. Peng, J. Liu and Z. Nie, "Computer Vision Based Pre-Processing for Channel Sensing in Non-Stationary Environment," 2019 IEEE 90th Vehicular Technology Conference (VTC2019-Fall), 2019, pp. 1-5, doi: [10.1109/VTCFall.2019.8891457](https://ieeexplore.ieee.org/document/8891457).
